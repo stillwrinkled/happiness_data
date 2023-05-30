@@ -17,7 +17,9 @@ y_axis = st.selectbox("Select the data for y-axis", options)
 match (x_axis, y_axis):
     case pair if pair in [(x, y) for x in options for y in options if x != y]:
         # figure = px.scatter(df[options], df[options], labels={"x": f"{x_axis}", "y": f"{y_axis}"})
-        figure = px.scatter(df[pair[0]], df[pair[1]], labels={"x": f"{x_axis}", "y": f"{y_axis}"})
+        # figure = px.scatter(df[pair[0]], df[pair[1]], labels={"x": f"{x_axis}", "y": f"{y_axis}"})
+        figure = px.scatter(df, x=pair[0], y=pair[1], labels={"x": f"{x_axis}", "y": f"{y_axis}"})
+
         st.plotly_chart(figure)
 
         st.write(f'You selected {pair[0]} for x-axis and {pair[1]} for y-axis.')
