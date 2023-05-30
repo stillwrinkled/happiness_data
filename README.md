@@ -1,5 +1,5 @@
 # happiness_data
-From a given .csv file the python code plots scatter graph to analyse correlation between country and happiness
+From happy.csv file the python code plots scatter graph to analyse correlation between country and happiness
 This Python code leverages the `streamlit`, `pandas`, and `plotly.express` libraries to build a web application that visualizes relationships between different factors affecting happiness in a dataset.
 
 1. **`streamlit`**: This is an open-source Python library that allows you to easily create and share beautiful, custom web apps for machine learning and data science. In this code, it's used to design the web application's interface, including creating the title, dropdown boxes, and the section to display scatter plot and text.
